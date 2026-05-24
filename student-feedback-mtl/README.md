@@ -45,7 +45,7 @@ Trong quá trình thực nghiệm, đề tài sử dụng nhiều kiến trúc h
 ## Sơ đồ luồng xử lý tổng quát của phương pháp đề xuất
 
 <p align="center">
-  <img src="images/preprocessing.png" width="900"/>
+  <img src="images/pipeline.png" width="900"/>
 </p>
 
 <p align="center">
