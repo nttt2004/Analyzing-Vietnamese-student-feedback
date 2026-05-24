@@ -230,6 +230,21 @@ Các chỉ số đánh giá:
 - Recall
 - F1-score
 
+So sánh với các nghiên cứu trước:
+
+| Nghiên cứu                          | Phương pháp / Mô hình                                   | Sentiment μF1 | Sentiment mF1 | Sentiment wF1 | Topic μF1  | Topic mF1  | Topic wF1  |
+| ----------------------------------- | ------------------------------------------------------- | ------------- | ------------- | ------------- | ---------- | ---------- | ---------- |
+| Nguyễn Văn Kiệt và cs. (2018)       | MaxEnt (Baseline gốc)                                   | -             | -             | 0.8800        | -          | -          | 0.8400     |
+| Nguyen Duc Vu và cs. (2018)         | LSTM + Dependency BiLSTM + SVM                          | -             | -             | 0.9020        | -          | -          | -          |
+| Nguyen V. X. Phu và cs.             | BiLSTM                                                  | 0.9200        | -             | -             | 0.8960     | -          | -          |
+| Huynh và cs. (2020)                 | Ensemble (BERT, CNN, BiLSTM, LSTM)                      | 0.9279        | -             | -             | 0.8970     | -          | -          |
+| Le Si Lac và cs. (2020)             | BiLSTM + CNN                                            | -             | -             | 0.9355        | -          | -          | -          |
+| Truong Trong Loc và cs. (2020)      | PhoBERT + MLP                                           | -             | -             | 0.9392        | -          | -          | -          |
+| Dang Van Thin và cs. (2023)         | Heterogeneous Ensemble                                  | -             | -             | 0.9403        | -          | -          | -          |
+| Dang Van Thin và cs. (2024)         | LLM Few Shot                                            | -             | -             | 0.9127        | -          | -          | -          |
+| **Nghiên cứu này (Test cũ)**        | **PhoBERT Hard Sharing + Cross Entropy + PCGrad**       | **0.9406**    | **0.8394**    | **0.9379**    | **0.8932** | **0.8054** | **0.8916** |
+| **Nghiên cứu này (Test relabeled)** | **PhoBERT Hard Sharing + Cross Entropy + PCGrad + GDA** | **0.9599**    | **0.8762**    | **0.9586**    | **0.9302** | **0.8576** | **0.9289** |
+
 ## License
 
 Dự án phục vụ mục đích học tập và nghiên cứu.
