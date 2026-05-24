@@ -6,8 +6,6 @@
 - **Mã sinh viên:** 22028254
 - **Tên đề tài:** Nghiên cứu xây dựng mô hình học đa tác vụ kết hợp xử lý mất cân bằng lớp cho phân tích phản hồi sinh viên
 
----
-
 ## Giới thiệu
 
 Dự án nghiên cứu và thực nghiệm các phương pháp học sâu cho bài toán phân tích phản hồi sinh viên tiếng Việt (Vietnamese Student Feedback Analysis) bằng kỹ thuật học đa tác vụ (Multi-task Learning - MTL).
@@ -19,15 +17,11 @@ Nghiên cứu tập trung vào hai nhiệm vụ chính:
 
 Trong quá trình thực nghiệm, đề tài sử dụng nhiều kiến trúc học đa tác vụ khác nhau kết hợp với các mô hình ngôn ngữ tiền huấn luyện (Pre-trained Language Models - PLMs).
 
----
-
 ## Các mô hình backbone được sử dụng
 
 - PhoBERT
 - ViSoBERT
 - XLM-RoBERTa
-
----
 
 ## Các kiến trúc học đa tác vụ (MTL Architectures)
 
@@ -41,8 +35,6 @@ Trong quá trình thực nghiệm, đề tài sử dụng nhiều kiến trúc h
 | B5      | Hard Sharing + PCGrad                |
 | B6      | Soft Sharing + PCGrad                |
 
----
-
 ## Các hàm mất mát được sử dụng
 
 - Cross Entropy Loss
@@ -50,16 +42,43 @@ Trong quá trình thực nghiệm, đề tài sử dụng nhiều kiến trúc h
 - Focal Loss
 - Asymmetric Loss
 
----
+## Sơ đồ luồng xử lý tổng quát của phương pháp đề xuất
+
+<p align="center">
+  <img src="images/pipeline.png" width="900"/>
+</p>
+
+<p align="center">
+  <em>Hình: Sơ đồ luồng xử lý tổng quát của phương pháp đề xuất</em>
+</p>
+
+## Quy trình làm sạch dữ liệu
+
+<p align="center">
+  <img src="images/preprocessing.png" width="850"/>
+</p>
+
+<p align="center">
+  <em>Hình: Quy trình làm sạch dữ liệu</em>
+</p>
 
 ## Cấu trúc thư mục
 
 ```text
 Analyzing-Vietnamese-student-feedback
-│   README.md
-│   requirement.txt
 │
+├───.gitignore
+|
 └───student-feedback-mtl
+    |
+    ├───README.md
+    │
+    ├───requirement.txt
+    |
+    ├───images
+    │   ├───pipeline.png
+    │   └───preprocessing.png
+    |
     ├───data
     │   ├───gda
     │   │       new_train_llm_final_gda.csv
@@ -99,8 +118,6 @@ Analyzing-Vietnamese-student-feedback
                 B1-B6-CrossEntropy-XLM.ipynb
 ```
 
----
-
 ## Mô tả dữ liệu
 
 ### Dataset gốc
@@ -117,8 +134,6 @@ Mỗi mẫu dữ liệu gồm:
 - Nhãn cảm xúc
 - Nhãn chủ đề
 
----
-
 ### Dataset relabeled
 
 Tập dữ liệu được gán nhãn lại nhằm cải thiện chất lượng nhãn và giảm nhiễu dữ liệu.
@@ -129,8 +144,6 @@ Bao gồm:
 - val_relabeled.csv
 - test_relabeled.csv
 
----
-
 ### Dataset GDA
 
 Dữ liệu mở rộng sử dụng kỹ thuật sinh dữ liệu bằng mô hình ngôn ngữ lớn (LLM-based GDA).
@@ -139,8 +152,6 @@ Bao gồm:
 
 - old_train_llm_final_gda.csv
 - new_train_llm_final_gda.csv
-
----
 
 ## Nội dung notebook
 
@@ -163,8 +174,6 @@ Bao gồm:
 - Thực nghiệm với relabeled dataset
 - Thực nghiệm với PCGrad
 
----
-
 ## Yêu cầu môi trường
 
 Cài đặt thư viện:
@@ -172,8 +181,6 @@ Cài đặt thư viện:
 ```bash
 pip install -r requirement.txt
 ```
-
----
 
 ## Cách chạy notebook
 
@@ -195,8 +202,6 @@ Sau đó mở notebook tương ứng trong thư mục:
 student-feedback-mtl/notebooks/
 ```
 
----
-
 ## Công nghệ sử dụng
 
 - Python
@@ -208,8 +213,6 @@ student-feedback-mtl/notebooks/
 - NumPy
 - Matplotlib
 - Seaborn
-
----
 
 ## Kết quả nghiên cứu
 
@@ -226,8 +229,6 @@ Các chỉ số đánh giá:
 - Precision
 - Recall
 - F1-score
-
----
 
 ## License
 
