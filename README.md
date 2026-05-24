@@ -45,7 +45,7 @@ Trong quá trình thực nghiệm, đề tài sử dụng nhiều kiến trúc h
 ## Sơ đồ luồng xử lý tổng quát của phương pháp đề xuất
 
 <p align="center">
-  <img src="images/preprocessing.png" width="900"/>
+  <img src="student-feedback-mtl/images/preprocessing.png" width="900"/>
 </p>
 
 <p align="center">
@@ -55,7 +55,7 @@ Trong quá trình thực nghiệm, đề tài sử dụng nhiều kiến trúc h
 ## Quy trình làm sạch dữ liệu
 
 <p align="center">
-  <img src="images/preprocessing.png" width="850"/>
+  <img src="student-feedback-mtl/images/preprocessing.png" width="850"/>
 </p>
 
 <p align="center">
