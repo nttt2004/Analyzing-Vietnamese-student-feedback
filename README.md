@@ -110,6 +110,7 @@ Analyzing-Vietnamese-student-feedback
         │       B1_HardSharing_Relabeled.ipynb
         │       B5_HardSharing_PCGrad_GDA.ipynb
         │       B5_HardSharing_PCGrad_Relabeled.ipynb
+        |       B5_HardSharing_PCGrad_optuna.ipynb
         │
         ├───VisoBERT
         │       B0_Visobert.ipynb
@@ -244,8 +245,8 @@ So sánh với các nghiên cứu trước:
 | Truong Trong Loc và cs. (2020)      | PhoBERT + MLP                                     | -             | -             | 0.9392        | -          | -          | -          |
 | Dang Van Thin và cs. (2023)         | Heterogeneous Ensemble                            | -             | -             | 0.9403        | -          | -          | -          |
 | Dang Van Thin và cs. (2024)         | LLM Few Shot                                      | -             | -             | 0.9127        | -          | -          | -          |
-| **Nghiên cứu này (Test cũ)**        | **PhoBERT Hard Sharing + Cross Entropy + PCGrad** | **0.9406**    | **0.8394**    | **0.9379**    | **0.8932** | **0.8054** | **0.8916** |
-| **Nghiên cứu này (Test relabeled)** | **PhoBERT Hard Sharing + Cross Entropy + PCGrad** | **0.9599**    | **0.8762**    | **0.9586**    | **0.9302** | **0.8576** | **0.9289** |
+| **Nghiên cứu này (Test cũ)**        | **PhoBERT Hard Sharing + Cross Entropy + PCGrad** | **0.9416**    | **0.8419**    | **0.9398**    | **0.8923** | **0.8045** | **0.8913** |
+| **Nghiên cứu này (Test relabeled)** | **PhoBERT Hard Sharing + Cross Entropy + PCGrad** | **0.9593**    | **0.8738**    | **0.9582**    | **0.9283** | **0.8645** | **0.9282** |
 
 ## License
 
